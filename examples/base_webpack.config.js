@@ -28,7 +28,14 @@ module.exports = function (root, options) {
         'tungstenjs': path.join(__dirname, tungstenPath)
       }
     },
+    devtool: '#inline-source-map',
     module: {
+      preLoaders: [
+        {
+          test: /\.js$/,
+          loader: "source-map-loader"
+        }
+      ],
       loaders: [
         {test: /\.mustache$/, loader: path.join(__dirname, '../precompile/tungsten_template')},
         {test: /\.js$/, loader: 'babel', exclude: /node_modules/}

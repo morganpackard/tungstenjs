@@ -22,7 +22,7 @@ module.exports = function(options) {
         'jquery': path.join(__dirname, './src/polyfill/jquery')
       }
     },
-    devtool: '#source-map',
+    devtool: '#inline-source-map',
     resolveLoader: {
       modules: [path.join(__dirname, 'node_modules'), path.join(__dirname, 'precompile')]
     },

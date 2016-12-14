@@ -22,6 +22,7 @@ module.exports = function(options) {
       libraryTarget: 'umd',
       library: 'tungsten'
     },
+    devtool: "source-map",
     target: envStr,
     resolve: {
       alias: {
