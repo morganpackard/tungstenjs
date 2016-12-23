@@ -28,7 +28,7 @@ module.exports = function (root, options) {
         'tungstenjs': path.join(__dirname, tungstenPath)
       }
     },
-    devtool: '#inline-source-map',
+    devtool: '#source-map',
     module: {
       preLoaders: [
         {
