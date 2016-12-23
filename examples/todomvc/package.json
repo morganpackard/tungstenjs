@@ -10,8 +10,5 @@
   },
   "dependencies": {
     "todomvc-app-css": "^2.0.1"
-  },
-  "devDependencies": {
-    "source-map-loader": "^0.1.5"
   }
 }
