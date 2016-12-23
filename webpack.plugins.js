@@ -21,6 +21,7 @@ var entryPoints = {
 
 module.exports = webpackSettings.compileSource({
   entry: entryPoints,
+  devtool: '#source-map',
   output: {
     filename: 'tungsten.event.[name].js',
     libraryTarget: 'umd',
